@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再次发现 · 开云</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #fafaf9;
+            color: #1c1c1e;
+            line-height: 1.7;
+        }
+        a {
+            color: #c73e3a;
+            text-decoration: none;
+            border-bottom: 1px dotted transparent;
+            transition: border-color 0.25s, color 0.25s;
+        }
+        a:hover {
+            border-bottom-color: #c73e3a;
+            color: #0e0e0e;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        /* 深色头图区域 */
+        .hero {
+            background: #1a1a1c;
+            color: #efede8;
+            padding: 4.5rem 1.5rem 4rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero h1 span {
+            display: inline-block;
+            background: #c73e3a;
+            color: #fff;
+            font-weight: 500;
+            padding: 0.05em 0.35em;
+            border-radius: 4px;
+        }
+        .hero .sub {
+            max-width: 580px;
+            margin: 0.5rem auto 0;
+            font-size: 1rem;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+        /* 正文区 */
+        .content {
+            padding: 3rem 0 4rem;
+            background: #fafaf9;
+        }
+        .content .post-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #7c7c7f;
+            margin-bottom: 1.8rem;
+            border-bottom: 1px solid #e2e1de;
+            padding-bottom: 0.8rem;
+        }
+        .content h2 {
+            font-size: 1.5rem;
+            font-weight: 420;
+            margin: 2.2rem 0 0.8rem;
+            color: #2d2d30;
+            letter-spacing: -0.01em;
+        }
+        .content p {
+            margin-bottom: 1.4rem;
+            text-align: justify;
+        }
+        .content blockquote {
+            border-left: 4px solid #c73e3a;
+            background: #f3f0eb;
+            padding: 1rem 1.5rem;
+            margin: 1.8rem 0;
+            font-style: normal;
+            color: #3a3a3e;
+            border-radius: 2px 8px 8px 2px;
+            font-size: 0.95rem;
+        }
+        .content blockquote strong {
+            color: #c73e3a;
+            font-weight: 500;
+        }
+        .inset {
+            background: #f0eee9;
+            padding: 1rem 1.6rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            font-size: 0.92rem;
+            border: 1px solid #e0ddd6;
+        }
+        .inset strong {
+            color: #c73e3a;
+        }
+        .faq-summary {
+            margin: 2.2rem 0 1rem;
+            border-top: 1px solid #e2e1de;
+            padding-top: 1.8rem;
+        }
+        .faq-summary details {
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed #d6d3cc;
+            padding-bottom: 0.8rem;
+        }
+        .faq-summary summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #2d2d30;
+            font-size: 1rem;
+            padding: 0.2rem 0;
+        }
+        .faq-summary summary::-webkit-details-marker {
+            color: #c73e3a;
+        }
+        .faq-summary p {
+            margin: 0.6rem 0 0.2rem;
+            padding-left: 0.5rem;
+            font-size: 0.92rem;
+        }
+        .visit-note {
+            margin-top: 2.5rem;
+            padding: 1.2rem 0 0.2rem;
+            border-top: 1px solid #e2e1de;
+            font-size: 0.95rem;
+            color: #4b4b50;
+        }
+        .visit-note strong {
+            font-weight: 500;
+        }
+        .footer {
+            background: #1a1a1c;
+            color: #b5b2ac;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.03em;
+        }
+        .footer a {
+            color: #d9d1c6;
+            border-bottom: none;
+        }
+        .footer a:hover {
+            color: #fff;
+            border-bottom: 1px solid #c73e3a;
+        }
+        @media (max-width: 500px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .content h2 {
+                font-size: 1.25rem;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+            .hero {
+                padding: 3rem 1rem;
+            }
+            .content .post-meta {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 深色头图 -->
+    <header class="hero">
+        <div class="container">
+            <h1>再次遇见 <span>开云</span></h1>
+            <p class="sub">收藏一个地方，不是因为初见惊艳，而是因为每次回来都仍有新发现。</p>
+        </div>
+    </header>
+
+    <!-- 正文区：简洁博客式 -->
+    <main class="content">
+        <div class="container">
+
+            <div class="post-meta">
+                <span>📄 阅读约 4 分钟</span>
+                <span>🔄 持续关注 · 常回来看看</span>
+            </div>
+
+            <p>无论是偶然路过，还是特意前来，一个值得被记住的站点，总会有某种特质，让人愿意把它放进收藏夹，并在某个安静的时刻再次点开。<strong>开云</strong> 正是这样一个让人愿意长时间停留、反复回看的地方。它不属于瞬息即逝的信息流，而更像是书架上那本常翻常新的文集。</p>
+
+            <p>第一次访问时，你或许会被它的界面和内容逻辑吸引；第二次回来，你会发现更多藏在细节中的巧思。而当你养成习惯，把它当作日常获取信息与灵感的来源，它便悄悄成为你数字生活的一部分。这也是为什么，我们会在浏览器书签栏里为它留出一个位置——<a href="https://www.zero-load-kaiyun.com.cn">开云</a>，就是这样一种存在。</p>
+
+            <h2>收藏即认可</h2>
+            <p>在信息爆炸的年代，收藏几乎成为最轻量的认可。但真正的收藏不是囤积，而是选择。当你主动将某一站点加入书签，意味着它跨过了“可读”的门槛，进入了“值得反复读”的范畴。<strong>开云</strong> 没有喧哗的弹窗，没有紧迫的倒计时，它提供的是沉静的内容呼吸节奏——你可以随时离开，也随时欢迎回来。</p>
+
+            <blockquote>
+                “最好的网站，是你忘了什么时候收藏的，却总能在需要时恰好想起。”<br>
+                —— 一位长期读者的笔记
+            </blockquote>
+
+            <p>很多人在第一次浏览后，会选择把 <strong>开云</strong> 放进「常用」文件夹。理由各不相同：有人喜欢其干净的信息层级，有人着迷于内容的独立见解，还有人只想在碎片时间里找到一个不消耗注意力的角落。但无论初衷是什么，最终都指向同一个行为——<strong>持续关注</strong>。</p>
+
+            <div class="inset">
+                <strong>提示</strong> 如果你已经来过，不妨现在就去确认一下书签栏。<br>
+                如果这是你第一次到访，或许可以试着在浏览器里收藏 <a href="https://www.zero-load-kaiyun.com.cn">开云</a> —— 给未来的自己留一个安静的入口。
+            </div>
+
+            <h2>在持续关注中收获</h2>
+            <p>持续关注一个网站，就像经营一段缓慢的友谊。你不需要每天都去，但你知道它一直在那里，并不断生长。<strong>开云</strong> 的内容更新遵循自己的节奏，不盲从热点，不追逐流量。这里没有突然的推送打扰你的工作流，但每次主动回来，都可能有新的文章、新的视角或新的功能等待你发现。这种“主动获取”的体验，反而让信息留存得更久。</p>
+
+            <p>许多访客在多次访问后，会逐渐形成自己的阅读路线：先扫一眼最新内容，再翻翻之前错过的专栏，最后在评论区或站内的某个角落找到意外惊喜。这种探索感，是算法推荐永远无法替代的。</p>
+
+            <!-- FAQ 摘要 -->
+            <div class="faq-summary">
+                <h2>常见疑问 · 简短回应</h2>
+                <details>
+                    <summary>我是否需要注册才能持续关注？</summary>
+                    <p>完全不需要。你可以直接通过书签或定期访问来保持关注。<strong>开云</strong> 对所有访客开放，无需登录即可浏览绝大多数内容。</p>
+                </details>
+                <details>
+                    <summary>如果我忘记之前的阅读进度怎么办？</summary>
+                    <p>站内提供了基础的浏览记录辅助（如最近更新列表），但更推荐你利用浏览器的书签或稍后读工具，自己管理阅读进度，这往往更灵活。</p>
+                </details>
+                <details>
+                    <summary>这里的内容会一直保持更新吗？</summary>
+                    <p>是的，内容会持续更新，但从不设定固定频率。比起数量，我们更关注每篇文章的质量和独立性。这也是很多访客选择长期收藏的原因。</p>
+                </details>
+            </div>
+
+            <!-- 访问句 / 再次邀请 -->
+            <div class="visit-note">
+                <p><strong>再次访问，不需要理由。</strong> 只需要记得，在书签栏或地址栏里输入那个你已经熟悉的地址：<a href="https://www.zero-load-kaiyun.com.cn">开云</a>。也许这次回来，你会读到一段正好契合此刻心境的文字。</p>
+                <p style="margin-top: 0.8rem;">我们在这里，静静等你回来。</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>常回来 · <a href="https://www.zero-load-kaiyun.com.cn">开云</a> · 保持好奇</p>
+            <p style="margin-top: 0.5rem; opacity: 0.6;">收藏即信任，持续关注是最好的回响</p>
+        </div>
+    </footer>
+</body>
+</html>
